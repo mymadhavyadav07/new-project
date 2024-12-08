@@ -113,9 +113,9 @@
 			</div>
 		</form>
 	
-<script src="{% static './decode.js' %}"></script>
+<script type="text/javascript" src="{% static './decode.js' %}"></script>
 
-<script>
+<script type="text/javascript">
 	const fileInput = document.getElementById('file');
 	const form = document.querySelector('form');
 
@@ -129,7 +129,7 @@
 
 </script>
 {% if decoded_msg %}
-<script>
+<script type="text/javascript">
 	document.getElementById('container').style.zIndex = "100";
 	document.getElementById("container").style.backdropFilter = "blur(5px)";
 	document.getElementById("info").style.visibility = 'visible';
